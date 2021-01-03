@@ -1,2 +1,2 @@
-# self-supervised-learning-of-object-movement
-Pytorch implementation of "self-supervised learning of object movement for image animation"
+# MAT-net:decomposing appearance-irrelevant warp flow into multiple affine transformations
+Pytorch implementation of "MAT-net:decomposing appearance-irrelevant warp flow into multiple affine transformations"
