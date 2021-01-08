@@ -1,0 +1,79 @@
+dataset_params:
+  root_dir: /path/to/image
+  frame_shape: [ 256, 256, 3 ]
+  id_sampling: False
+  augmentation_params:
+    flip_param:
+      horizontal_flip: True
+      time_flip: True
+    crop_param:
+      size: [256, 256]
+    resize_param:
+      ratio: [0.9, 1.1]
+    jitter_param:
+      hue: 0.5
+loader_params:
+  train:
+    batch_size: 20
+    num_workers: 6
+    shuffle: True
+    drop_last: True
+  reconstruction:
+    batch_size: 1
+    num_workers: 1
+    shuffle: False
+    drop_last: False
+  animate:
+    batch_size: 1
+    num_workers: 1
+    shuffle: False
+    drop_last: False
+    num_pairs: 50
+
+model_params:
+  regression_module:
+    dim_in: 6
+    max_features: 256
+    num_transforms: 10
+    block_expansion: 32
+    grid_params:
+      dim_in: 3
+      num_blocks: 5
+      max_features: 1024
+      block_expansion: 64
+      estimate_occlusion_mask: True
+  generator:
+    block_expansion: 64
+    max_features: 512
+    num_down_blocks: 2
+    num_bottleneck_blocks: 6
+  discriminator:
+    block_expansion: 32
+    max_features: 512
+    num_blocks: 4
+
+train_params:
+  num_iterations: 100000
+  epoch_milestones: [ 70000,90000 ]
+  lr_regression_module: 2.0e-4
+  lr_generator: 2.0e-4
+  lr_discriminator: 2.0e-4
+  log_freq: 100
+  eval_freq: 1000
+  checkpoint_freq: 50000
+  loss_weights:
+    gan_weight: 1
+    reg: 0.01
+    vgg: 10
+
+reconstruction_params:
+  num_videos: 1000
+  format: '.mp4'
+
+animate_params:
+  format: '.mp4'
+  use_relative: True
+
+visualizer_params:
+  draw_border: True
+  colormap: 'gist_rainbow'
