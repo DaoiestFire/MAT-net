@@ -3,5 +3,11 @@ Pytorch implementation of "MAT-net:decomposing appearance-irrelevant warp flow i
 
 ### Demo
 
+### Train
+
+### Test reconstruction
+
+### Test animation
+
 ### Acknowledgement
 our project is based on [first order motion model](https://github.com/AliaksandrSiarohin/first-order-model)
