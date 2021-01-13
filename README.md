@@ -1,5 +1,5 @@
-## MAT-net:representing appearance-irrelevant warp flow by multiple affine transformations
-Pytorch implementation of "MAT-net:representing appearance-irrelevant warp flow by multiple affine transformations"
+## MAT-net:representing appearance-irrelevant warp field by multiple affine transformations
+Pytorch implementation of "MAT-net:representing appearance-irrelevant warp field by multiple affine transformations"
 
 ### Demo
 ```bash
