@@ -12,6 +12,7 @@ python demo.py --config path/to/config --checkpoint path/to/checkpoint --source 
 ```
 `--cpu` can be added to use cpu device.
 * animate the input image according to one target video
+
 for face data, `--find_best_frame` means to find `init image` automaticly.
 ```bash
 python demo.py --config path/to/config --checkpoint path/to/checkpoint --source path/to/input_image --driving path/to/driving_video --result path/to/save/result --find_best_frame
@@ -20,6 +21,7 @@ you also can speicfy a frame of driving video as the init image
 ```bash
 python demo.py --config path/to/config --checkpoint path/to/checkpoint --source path/to/input_image --driving path/to/driving_video --result path/to/save/result --best_frame best_frame_number
 ```
+if command without `--find_best_frame` and `--best_frame`, demo will use the first frame of driving video as `init image`
 ### Train
 
 ### Test reconstruction
