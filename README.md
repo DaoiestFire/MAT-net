@@ -29,6 +29,6 @@ if command without `--find_best_frame` and `--best_frame`, demo will use the fir
 ### Test animation
 
 ### update
-
+2021/01/21 Demo has been updated.
 ### Acknowledgement
 our project is based on [first order motion model](https://github.com/AliaksandrSiarohin/first-order-model)
