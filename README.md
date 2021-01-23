@@ -4,6 +4,20 @@ Pytorch implementation of "MAT-net:representing appearance-irrelevant warp field
 ### prerequisites
 * pytorch==1.0.0
 * the version of pytorch is important. Other packages should be installed by following the output of shell.
+### Datasets
+* Voxceleb: following https://github.com/DaoiestFire/video-preprocessing
+* FashionVideo: following https://vision.cs.ubc.ca/datasets/fashion/
+* moving-Gif: download from
+* the structure of dataset like:
+dataset_folder-
+              |--train_folder-
+                             |--train_sample1
+                             |--train_sample2
+                             |...
+              |--test_folder-
+                             |--test_sample1
+                             |--test_sample2
+                             |...
 ### Demo
 * Note that `relative animation` is recommended. i.e. an init image is needed. `init image` is similar to `input image` in pose.
 * animate the input image according to one target image
@@ -23,7 +37,11 @@ python demo.py --config path/to/config --checkpoint path/to/checkpoint --source 
 ```
 if command without `--find_best_frame` and `--best_frame`, demo will use the first frame of driving video as `init image`
 ### Train
-
+to train on a dataset
+```bash
+python run.py --config path/to/config
+```
+the output of training process will be saved in `./log` folder.
 ### Test reconstruction
 
 ### Test animation
