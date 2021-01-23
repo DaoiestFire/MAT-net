@@ -54,6 +54,7 @@ the output of training process will be saved in `./log` folder.
 
 ### update
 2021/01/23 Datasets, Train has been updated
+
 2021/01/21 Demo has been updated.
 ### Acknowledgement
 our project is based on [first order motion model](https://github.com/AliaksandrSiarohin/first-order-model)
