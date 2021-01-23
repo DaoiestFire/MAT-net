@@ -9,23 +9,17 @@ Pytorch implementation of "MAT-net:representing appearance-irrelevant warp field
 * FashionVideo: following https://vision.cs.ubc.ca/datasets/fashion/
 * moving-Gif: download from
 * the structure of dataset like:
+```
 dataset_folder-
-
               |--train_folder-
-
                              |--train_sample1
-
                              |--train_sample2
-
                              |...
-
               |--test_folder-
-              
                              |--test_sample1
-                             
                              |--test_sample2
-                             
                              |...
+```
 ### Demo
 * Note that `relative animation` is recommended. i.e. an init image is needed. `init image` is similar to `input image` in pose.
 * animate the input image according to one target image
