@@ -45,7 +45,7 @@ python run.py --config path/to/config
 ```
 to train from a checkpoint
 ```bash
-python run.py --config path/to/config --checkpoint pathto/checkpoint
+python run.py --config path/to/config --checkpoint path/to/checkpoint
 ```
 the output of training process will be saved in `./log` folder.
 ### Test reconstruction
@@ -53,6 +53,7 @@ the output of training process will be saved in `./log` folder.
 ### Test animation
 
 ### update
+2021/01/23 Datasets, Train has been updated
 2021/01/21 Demo has been updated.
 ### Acknowledgement
 our project is based on [first order motion model](https://github.com/AliaksandrSiarohin/first-order-model)
