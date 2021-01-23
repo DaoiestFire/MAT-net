@@ -43,6 +43,10 @@ to train on a dataset
 ```bash
 python run.py --config path/to/config
 ```
+to train from a checkpoint
+```bash
+python run.py --config path/to/config --checkpoint pathto/checkpoint
+```
 the output of training process will be saved in `./log` folder.
 ### Test reconstruction
 
