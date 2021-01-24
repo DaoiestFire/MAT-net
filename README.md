@@ -37,7 +37,7 @@ you also can speicfy a frame of driving video as the init image
 ```bash
 python demo.py --config path/to/config --checkpoint path/to/checkpoint --source path/to/input_image --driving path/to/driving_video --result path/to/save/result --best_frame best_frame_number
 ```
-if command without `--find_best_frame` and `--best_frame`, demo will use the first frame of driving video as `init image`
+if command without `--find_best_frame` and `--best_frame`, demo will use the first frame of driving video as `init image`. or you can specify `--relative False` to use absolute transfer.
 ### Train
 to train on a dataset
 ```bash
@@ -49,11 +49,21 @@ python run.py --config path/to/config --checkpoint path/to/checkpoint
 ```
 the output of training process will be saved in `./log` folder.
 ### Test reconstruction
-
+`reconstruction` means reconstruct every videos in test folder of dataset.
+`bash
+python run.py --config path/to/config --checkpoint path/to/checkpoint --mode reconstruction
+`
+resulys will be saved in `./log/reconstruction`
 ### Test animation
+`animation` means animate a still image according to a target video. video pairs has been saved in `config/dataset_name.csv`
+`bash
+python run.py --config path/to/config --checkpoint path/to/checkpoint --mode animate
+`
 
 ### update
-2021/01/23 Datasets, Train has been updated
+2021/01/24 Test has been updated.
+
+2021/01/23 Datasets, Train has been updated.
 
 2021/01/21 Demo has been updated.
 ### Acknowledgement
