@@ -50,15 +50,15 @@ python run.py --config path/to/config --checkpoint path/to/checkpoint
 the output of training process will be saved in `./log` folder.
 ### Test reconstruction
 `reconstruction` means reconstruct every videos in test folder of dataset.
-`bash
+```bash
 python run.py --config path/to/config --checkpoint path/to/checkpoint --mode reconstruction
-`
+```
 resulys will be saved in `./log/reconstruction`
 ### Test animation
 `animation` means animate a still image according to a target video. video pairs has been saved in `config/dataset_name.csv`
-`bash
+```bash
 python run.py --config path/to/config --checkpoint path/to/checkpoint --mode animate
-`
+```
 
 ### update
 2021/01/24 Test has been updated.
