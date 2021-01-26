@@ -20,6 +20,8 @@ dataset_folder-
                              |--test_sample2
                              |...
 ```
+### pretrained-model
+download from (google driver)[https://drive.google.com/drive/folders/1mEF07YEuY4bOklM3m9tBvuzDPRpLMR7s]
 ### Demo
 * Note that `relative animation` is recommended. i.e. an init image is needed. `init image` is similar to `input image` in pose.
 * animate the input image according to one target image
