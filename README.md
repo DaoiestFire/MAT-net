@@ -21,7 +21,7 @@ dataset_folder-
                              |...
 ```
 ### pretrained-model
-download from (google driver)[https://drive.google.com/drive/folders/1mEF07YEuY4bOklM3m9tBvuzDPRpLMR7s]
+download from [google drive](https://drive.google.com/drive/folders/1mEF07YEuY4bOklM3m9tBvuzDPRpLMR7s)
 ### Demo
 * Note that `relative animation` is recommended. i.e. an init image is needed. `init image` is similar to `input image` in pose.
 * animate the input image according to one target image
@@ -63,6 +63,8 @@ python run.py --config path/to/config --checkpoint path/to/checkpoint --mode ani
 ```
 
 ### update
+2021/01/26 pretrained models have been released.
+
 2021/01/24 Test has been updated.
 
 2021/01/23 Datasets, Train has been updated.
