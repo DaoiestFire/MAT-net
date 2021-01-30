@@ -13,8 +13,6 @@ from test import reconstruction, animate
 
 warnings.filterwarnings('ignore')
 
-SLURM_JOBID = os.getenv('SLURM_JOBID')
-SLURM_JOB_USER = os.getenv('SLURM_JOB_USER')
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--config", required=True, help="path to config")
@@ -35,8 +33,6 @@ if __name__ == "__main__":
     # build model
     model_dict = build_model(config['model_params'])
 
-    # root_dir = os.path.join('/ssd', SLURM_JOB_USER, SLURM_JOBID, 'vox_video')
-    # config['dataset_params']['root_dir'] = root_dir
     data_loader = get_loader(mode=opt.mode, loader_params=config['loader_params'],
                              dataset_params=config['dataset_params'])
 
